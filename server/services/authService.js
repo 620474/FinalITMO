@@ -24,8 +24,6 @@ module.exports = {
     },
     decodeToken: function (req) {
         const token = req.headers.authorization || req.headers['authorization'];
-
-
         if (!token) {
             return null;
         }
